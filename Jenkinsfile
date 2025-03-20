@@ -2,8 +2,8 @@ pipeline {
     agent any
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')  // DockerHub credentials
-        GIT_CREDENTIALS = credentials('git-credentials')             // Git credentials for manifests repo
-        IMAGE_NAME = "geetha-17/hello-world"                         // Replace with your DockerHub username
+        GIT_CREDENTIALS = credentials('b213f9bd-9d94-4318-aec9-aabb24118bfd')             // Git credentials for manifests repo
+        IMAGE_NAME = "geetha8500/hello-world"                         // Replace with your DockerHub username
         MANIFESTS_REPO = "https://github.com/geetha-17/k8s-manifests.git"  // Your manifests repo
     }
     stages {
