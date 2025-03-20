@@ -1,10 +1,10 @@
 pipeline {
     agent any
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')  // DockerHub credentials
-        GIT_CREDENTIALS = credentials('git-credentials')             // Git credentials for manifests repo
-        IMAGE_NAME = "<your-dockerhub-username>/hello-world"
-        MANIFESTS_REPO = "<your-manifests-repo-url>.git"             // e.g., https://github.com/<username>/k8s-manifests.git
+        DOCKERHUB_CREDENTIALS = credentials('41380629-0631-44da-ba4d-add2b73c5926')  // DockerHub credentials
+        GIT_CREDENTIALS = credentials('b213f9bd-9d94-4318-aec9-aabb24118bfd')             // Git credentials for manifests repo
+        IMAGE_NAME = "geetha8500/hello-world"
+        MANIFESTS_REPO = "https://github.com/geetha-17/k8s-manifests.git"             // e.g., https://github.com/<username>/k8s-manifests.git
     }
     stages {
         stage('Build Docker Image') {
